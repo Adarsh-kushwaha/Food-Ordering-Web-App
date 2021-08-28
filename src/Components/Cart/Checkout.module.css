@@ -62,3 +62,7 @@
     border-color: #aa0b20;
     background-color: #ffeff1;
   }
+
+  .errorText{
+    color: #f51616;
+  }
