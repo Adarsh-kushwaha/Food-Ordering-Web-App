@@ -55,12 +55,21 @@ const Checkout = (props) => {
     if (!formIsValid) {
       return;
     }
-      resetCity();
+
+    props.onConfirmOrder({
+      name:nameEntered,
+      street:streetEntered,
+      postalCode:postalEntered,
+      city:cityEntered
+    })
+  resetCity();
   resetName();
   resetPostal();
   resetStreet();
+  
   };
 
+  
 
 
   return (
